@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed1231e2-6983-44f5-8477-b95cab748800" name="Changes" comment="">
+    <list default="true" id="ed1231e2-6983-44f5-8477-b95cab748800" name="Changes" comment="equation and x method left">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LinearEquation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinearEquation.java" afterDir="false" />
@@ -64,6 +64,14 @@
       <option name="presentableId" value="Default" />
       <updated>1666106006609</updated>
     </task>
+    <task id="LOCAL-00001" summary="equation and x method left">
+      <created>1667266891567</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667266891567</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -76,5 +84,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="equation and x method left" />
+    <option name="LAST_COMMIT_MESSAGE" value="equation and x method left" />
   </component>
 </project>

@@ -33,7 +33,7 @@ public class LinearEquation {
 
     /* Calculates and returns the y-intercept of the line between (x1, y1) and
        (x2, y2), rounded to the nearest hundredth */
-    public double yIntercept(){ //y = mx+ b y1 = m(x2) +b
+    public double yIntercept(){
         double ySubstitute = y1;
         double xSubstitute = slope()*x1;
         double yIntercept = ySubstitute - xSubstitute;
@@ -67,20 +67,42 @@ public class LinearEquation {
                subtraction!
      */
     public String equation(){
+        String returnSlope = "";
         if(slope() != (int) slope()){ //convert slope decimal into fraction
+            int rise = y2 -y1;
+            int run = x2-x1;
+            returnSlope = rise + "/" + run + "x";
 
-        } else if(slope() == 1){ // omit number "1" when slope is 1
+            if(run < 0 ){ // slope is negative
+                returnSlope = "-" + rise + "/" + run*-1 + "x";
+            }
+            if(rise < 0 && run < 0){ // in the case of double negatives, return positive slope
+                returnSlope = rise*-1 + "/" + run*-1 + "x";
+            }
+        } else { // slope is a whole number
+            returnSlope += (int)slope() + "x";
+        }
 
+        if(slope() == 1){ // omit number "1" when slope is 1
+            returnSlope = "x";
         } else if(slope() == -1){ //omit number "1" when slope is -1
+            returnSlope = "-x";
+        }
 
-        } else {
-        return "y = " + (int)slope() + "x + " + yIntercept();
-    }
-
+        String returnYIntercept = "";
         if(yIntercept() == 0){ // omit b when y intercept is 0
-
-        } else if(yIntercept() == -){ // use "-" sign when y intercept is negative
-
+            returnYIntercept = "";
+        } else if(yIntercept() < 0) { // use "-" sign when y intercept is negative
+            returnYIntercept = " - "  + yIntercept()*-1;
+        } else{
+            returnYIntercept = " + " + yIntercept();
+        }
+        if(slope() == 0){ // when slope creates a horizontal line
+            returnSlope = "";
+            returnYIntercept = "";
+            returnYIntercept += (int)yIntercept();
+        }
+        return "y = " + returnSlope + returnYIntercept;
     }
 
 
