@@ -19,19 +19,20 @@ class LinearEquationRunner {
         int endParenthesis2 = coord2.indexOf(")");
         int x2 = Integer.parseInt(coord2.substring(1,comma2));
         int y2 = Integer.parseInt(coord2.substring(comma2+2,endParenthesis2));
+
         //slope is undefined, exit program without entering value into LinearEquation class
         if(x1 == x2){
             System.out.println("These points are on a vertical line: x = " + x1 );
             scan.close();
-        }else {
+        }else { // run coordinate through LinearEquation class
             //create object
-            LinearEquation testRun = new LinearEquation(x1, y1, x2, y2);
+            LinearEquation obj = new LinearEquation(x1, y1, x2, y2);
             System.out.println();
-            System.out.println(testRun.lineInfo()); // print LinearEquation Info
+            System.out.println(obj.lineInfo()); // print LinearEquation Info
 
-            System.out.println("Enter a value for x: ");
-            int userNum = scan.nextInt();
-
+            System.out.print("Enter a value for x: ");
+            double userNum = scan.nextDouble();
+            System.out.println(obj.coordinateForX(userNum));
 
             scan.close();
         }

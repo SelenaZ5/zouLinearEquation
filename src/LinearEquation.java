@@ -108,15 +108,14 @@ public class LinearEquation {
     /* Returns a String of the coordinate point on the line that has the given x value, with
        both x and y coordinates as decimals to the nearest hundredth, e.g (-5.0, 6.75) */
     public String coordinateForX(double xValue) {
-
-
-
-    /* "Helper" method for use elsewhere in your methods; returns the value toRound rounded
-        to the nearest hundredth
-        HINT:  the Math.round method can help with this!
-     */
-        return "";
+        double yValue = slope()*xValue + yIntercept();
+        return "The point on the line is (" + roundedToHundredth(xValue)
+                + ", " + roundedToHundredth(yValue)+ ")";
     }
+    /* "Helper" method for use elsewhere in your methods; returns the value toRound rounded
+    to the nearest hundredth
+    HINT:  the Math.round method can help with this!
+ */
     public double roundedToHundredth(double toRound) {
         return (double)Math.round(toRound*100) / 100;
     }
