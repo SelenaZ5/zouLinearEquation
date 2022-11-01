@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed1231e2-6983-44f5-8477-b95cab748800" name="Changes" comment="working method, finish up coordinateForX, check then done">
+    <list default="true" id="ed1231e2-6983-44f5-8477-b95cab748800" name="Changes" comment="Finished unit 2 project">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LinearEquation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinearEquation.java" afterDir="false" />
@@ -85,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667279462063</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Finished unit 2 project">
+      <created>1667296527230</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667296527230</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -102,6 +109,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="equation and x method left" />
     <MESSAGE value="working method, finish up coordinateForX, check then done" />
-    <option name="LAST_COMMIT_MESSAGE" value="working method, finish up coordinateForX, check then done" />
+    <MESSAGE value="Finished unit 2 project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished unit 2 project" />
   </component>
 </project>
